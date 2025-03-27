@@ -1,7 +1,33 @@
+
+
 # 🎙️ Conversor Texto → Audio (.txt/.docx a .mp3)
 <img src="imagenes/Logo.webp" alt="LogoApp" width="600"/>
 
-Convierte archivos de texto planos o Word directamente en archivos de audio `.mp3` usando una interfaz amigable y moderna con Google Text-to-Speech (gTTS).
+Convierte archivos de texto planos(txt) o Word escritos en inglés (para practicar y aprender) directamente en archivos de audio `.mp3` usando una interfaz amigable y moderna con Google Text-to-Speech (gTTS).
+
+---
+
+## ☁️ ¿Y si quiero llevarlo a Azure?
+
+También podés usar esta app en la nube con **Azure**, adaptándola según tu necesidad:
+
+### 1. Web App (Azure App Service)
+- ✅ Versión web accesible desde navegador
+- 💻 Requiere convertir el código a Flask o FastAPI
+- 💸 Gratis en plan F1, desde **€12/mes** en plan B1
+- 🌍 Ideal si querés compartir el conversor online
+
+### 2. API serverless (Azure Functions)
+- ✅ Código como función que procesa y devuelve `.mp3`
+- ⚙️ Ideal para integrarlo en apps web o móviles
+- 💸 1M ejecuciones gratis/mes, luego €0.20/100k
+- ❌ No tiene interfaz visual
+
+### 3. Contenedor (Azure Container Apps)
+- ✅ Corrés la app como está, dentro de un contenedor Docker
+- 💪 Máxima compatibilidad y control
+- 💸 Gratis hasta cierto uso, luego desde €4–8/mes
+- 🔧 Requiere saber Docker básico
 
 ---
 
@@ -24,7 +50,7 @@ git clone https://github.com/tuusuario/conversor_audio.git
 cd conversor_audio
 ```
 
-### 2. Crear y activar entorno virtual (recomendado para Python 3.10, al cual podes descargar usando pyenv)
+### 2. Crear y activar entorno virtual (recomendado para Python 3.10, al cual podés descargar usando pyenv)
 
 ```bash
 pyenv install 3.10.13
@@ -49,14 +75,14 @@ python main.py
 
 ## 🍎 ¿Querés una app `.app` para macOS?
 
-1. Asegurate de tener `pyenv` y Python 3.10.13
+1. Asegurate de tener `pyenv` y Python 3.10.13  
 2. Activá el entorno y empaquetá:
 
 ```bash
 python setup.py py2app
 ```
 
-3. Abrí la app desde el ```Finder```
+3. Abrí la app desde el ```Finder```  
 4. O desde la terminal:
 ```
 dist/Conversor Texto-Audio.app
@@ -84,8 +110,8 @@ El botón principal cambia durante el proceso, y no bloquea la ventana.
 
 ## 📄 Requisitos
 
-- Python 3.10+ recomendado
-- Acceso a Internet (para gTTS)
+- Python 3.10+ recomendado  
+- Acceso a Internet (para gTTS)  
 - macOS con `py2app` si querés exportar como `.app`
 
 ---
