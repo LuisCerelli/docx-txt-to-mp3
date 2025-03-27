@@ -1,0 +1,7 @@
+# Debe tener instalado ffmepg, en la terminal colocar: 
+# brew install ffmpeg
+
+gTTS
+python-docx
+tk
+py2app
